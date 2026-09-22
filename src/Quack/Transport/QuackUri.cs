@@ -118,7 +118,7 @@ public sealed class QuackUri
             throw new ArgumentException($"Port {port} out of range [1, 65535] in URI: '{uri}'.", nameof(uri));
         }
 
-        bool resolvedUseSsl = useSsl ?? !(host is "localhost" or "127.0.0.1" or "::1");
+        bool resolvedUseSsl = false;//useSsl ?? !(host is "localhost" or "127.0.0.1" or "::1");
         return new QuackUri(host, port, resolvedUseSsl);
     }
 

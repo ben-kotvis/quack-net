@@ -403,7 +403,7 @@ Quack.Type =
                 ],
                 options = type [
                     optional CommandTimeout = CommandTimeoutType,
-                    optional ReconnectOnSessionLoss = ReconnectOnSessionLossType
+                    optional ReconnectOnSessionLoss = ReconnectOnSessionLossType,
                     optional UseSSL = UseSSLType
                 ] meta [
                     Documentation.FieldCaption = Extension.LoadString("OptionsParameterCaption")
